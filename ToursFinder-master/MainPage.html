@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour's Finder</title>
+    <script type="text.javascript" src="jquery-3.6.0.min.js"></script>
+    <!-- 스와이퍼 불러오기 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- 폰트어썸 불러오기, 아이콘 사용할려면 꼭 있어야 함 -->
+    <script src="https://kit.fontawesome.com/267f4ea7f6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <link rel="stylesheet" href=".\css\mainpage.css">
+    <script src="JS.js" defer></script>
+</head>
+
+<body>
+        <!-- 상단바 -->
+        <div class="top-bar-wrap">
+
+            <div class="top-bar con row">
+    
+                <div class="logo-box cell">
+    
+                    <div class="logo">
+                        <a href="mainpage.html"><img src="img\main_Logo_img.png" alt="로고이미지" style="width: 175px; height: 191px;"></a>
+                    </div>
+                </div>
+    
+                <!-- 메뉴 -->
+                <div class="menu-box cell">
+    
+                    <ul class="nav-box row">
+    
+                        <li class="cell"><a href="tour.html" class="tour">여행지</a></li>
+                        <li class="cell"><a href="community.html" class="comm">커뮤니티</a></li>
+                        <li class="cell"><a href="Reco.html" class="reco">축제정보</a></li>
+                    </ul>
+    
+    
+                    <div class="login-box cell-r">
+                        <div class="icon-box">
+                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
+                        <a href="login.html" class="login">로그인</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+        <!-- 설문조사 -->
+        
+        <div class="surbay">
+            <div class="surbay_bar_box con row">
+                <div class="surbay_bar cell">
+                        <img class="surbay_bg" src="img\main_surbay_bg.png" alt="surbay-backgroun-img" >
+                        
+                        <div class="li_img cell-r">
+                            <img class="li_img" src="img\main_surbay_img2.png" alt="surbay_li_img">
+                        </div>
+                        
+                        <div class="text_box">
+                            <section>당신의 여행 취향을 알려주세요</section>
+                            <br>
+                            <p>Tour's Finder</p>
+                            <section class="text-1">에서</section>
+                            <section>여행지를 추천해드립니다 !</section>
+                        </div>
+
+                    <div class="surbay_btn_box cell">
+                        <a href="surbay.html">
+                            <p>설문조사 하러가기</p>
+                            <i class="fa-solid fa-arrow-right-long fa-2x cell-r"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 메인슬라이더 -->
+           <!-- 지금뜨는 여행지 슬라이더 -->
+           <div class="swiper_box">
+            <div class="swiper-container ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="text_box cell">
+                            <p>지금 뜨는 여행지</p>
+                            <div class="title">
+                                <h1>경주<p>(Gyeongiu)</p></h1>
+                                <p>동궁과 월지</p>
+                            </div>
+                            
+                        </div>
+                        <img src="img\main_slide_img1.png" alt="경주">
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1>담양<p>(Damyang)</p></h1>
+                                <p>죽녹원</p>
+                            </div>
+                            
+                        </div>
+                        <img src="img\main_slide_img2.png" alt="담양">
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1>서천<p>(Seocheon)</p></h1>
+                                <p>장항스카이워크</p>
+                            </div>
+
+                        </div>
+                            <img src="img\main_slide_img3.png" alt="서천">
+                        </div>
+                  
+                    <div class="swiper-slide">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1>진해<p>(Jinhae)</p></h1>
+                                <p>여좌천</p>
+                            </div>
+
+                        </div>
+                            <img src="img\main_slide_img4.png" alt="진해">
+                        </div>
+
+                    <div class="swiper-slide">
+                        <div class="text_box cell">
+                        <div class="title">
+                            <h1>경주<p>(Gyeongiu)</p></h1>
+                            <p>보문정</p>
+                        </div>
+
+                    </div>
+                        <img src="img\main_slide_img5.png" alt="경주">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="text_box cell">
+                            <div class="title">
+                                <h1>부산<p>(Busan)</p></h1>
+                                <p>광안대교</p>
+                            </div>
+    
+                        </div>
+                            <img src="img\main_slide_img6.png" alt="부산">
+                        </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+
+
+        <footer class="footer">
+
+        </footer>
+
+</body>
+
+</html>
