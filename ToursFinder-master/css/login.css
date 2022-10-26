@@ -1,0 +1,468 @@
+body {
+    font-family: 'IBMPlexSansKR-Regular';
+    overflow-x: auto; 
+    overflow-y: auto;
+}
+
+/* 노멀라이징 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.cell-r {
+    float: right;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.con {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.con1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메인 */
+.Main_Home {
+    width: 1410px;
+    height: auto;
+}
+
+/* 탑바 */
+
+
+.top-bar-wrap {
+    width: 100%;
+    background-color: #0e6ac7;
+}
+
+.top-bar-wrap>.top-bar {
+    height: 191px;
+}
+
+
+.top-bar-wrap>.top-bar>.logo-box > .logo {
+    width: 170px;
+    height: 180px;
+}
+
+.top-bar-wrap>.top-bar>.menu-box {
+    width: 700px;
+    height: 191px;
+    font-size: 22px;
+    position: relative;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+
+.top-bar-wrap>.top-bar>.menu-box>ul {
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    z-index: 1000;
+}
+
+.top-bar-wrap>.top-bar>.menu-box>ul>li {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 40px;
+    line-height: 115px;
+}
+
+.nav-box>li:hover {
+    color: #ffffff;
+}
+
+.menu-box>ul>.line {
+    position: relative;
+    margin-top: 5%;
+    border: 0.5px solid #b5b5b5;
+}
+
+.top-bar>.menu-box>ul:hover {
+    color: #ddd;
+}
+
+.top-bar>.menu-box>ul>li:hover {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.top-bar>.menu-box>ul>li::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.top_bar>.manu-box>ul>li:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* 로그인 */
+.login-box {
+    position: absolute;
+    width: 70px;
+    height: 191px;
+    right: -46%;
+    transform: translateX(-48%);
+    display: inline-block;
+    color: #ffffff;
+
+}
+
+.login-box > .icon-box{
+    padding-top: 70px;
+    padding-left: 12px;   
+
+
+  }
+
+.login-box > .login{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+
+/* 로그인메인화면 */
+
+.login_main{
+    width: 100%;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+}
+
+.login_main > .login_box > .title{
+    position: relative;
+    width: 401px;
+    height: 46px;
+    left: 0px;
+
+    text-align: center;
+}
+
+.login_main > .login_box > .title > p{
+    display: inline-block;
+    width: 300px;
+    height: 46px;
+    text-align: center;
+
+    font-weight: 400;
+    font-family: 'ImcreSoojin';
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #0e6ac7;
+
+
+}
+
+
+.login_main > .login_box{
+    position: relative;
+    width: 401px;
+    height: 511px;
+    left: 90px;
+    top: 100px;
+
+}
+
+.login_main > .login_box > .sub_box{
+    position: relative;
+    width: 401px;
+    height: 421px;
+    top: 40px;
+
+    /* border: 1px solid blue; */
+}
+
+.login_main > .login_box > .sub_box > #id{
+    position: relative;
+    width: 400px;
+    height: 56px;
+    left: -1.5px;
+
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #767676;
+}
+
+.login_main > .login_box > .sub_box > #password{
+    position: relative;
+    width: 400px;
+    height: 56px;
+    left: -1.5px;
+    top: 20px;
+
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #767676;
+}
+
+
+.login_main > .login_box > .sub_box > #btn{
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    top: 180px;
+    align-items: center;
+    left: 0px;
+
+    background-color: #0e6ac7;
+    border-radius: 30px;
+
+}
+
+.login_main > .login_box > .sub_box > #btn > p{
+    position: absolute;
+
+    width: 50px;
+    height: 25px;
+    left: 170px;
+    top: 12.5px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ffffff;
+}
+
+
+.login_main > .login_box > .sub_box > .login_chbox{
+    box-sizing: border-box;
+
+    position: relative;
+
+    width: 22px;
+    height: 22px;
+    top: 140px;
+
+    border-radius: 70%;
+
+    background-color: #ffffff;
+}
+
+
+input[type="checkbox"] + label{
+    position: relative;
+    width: 105px;
+    height: 20px;
+    top: 134px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #767676;
+
+}
+
+.login_main > .login_box > .sub_box > .fount_idpw{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    top: 260px;
+    right: 0px;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #767676;
+}
+
+.login_main > .login_box > .sub_box > .line{
+    position: relative;
+    width: 400px;
+    height: 0px;
+    top: 160px;
+
+    border: 1px solid #ddd;
+}
+
+.login_main > .login_box > .sub_box > .naver{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+
+    top: 340px;
+
+    background-color: #34ae37;
+    border-radius: 25.5px;
+    
+}
+
+
+.login_main > .login_box > .sub_box > .naver > p{
+    position: absolute;
+    width: 80px;
+    height: 13px;
+    top: 13px;
+    left: 70px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #ffffff;
+}
+
+.login_main > .login_box > .sub_box > .kakao{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+
+    right: 0px;
+    top: 340px;
+
+    background-color: #ffe617;
+    border-radius: 25.5px;
+    
+}
+
+
+.login_main > .login_box > .sub_box > .kakao > p{
+    position: absolute;
+    width: 80px;
+    height: 13px;
+    top: 13px;
+    right: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #47292b;
+}
+
+
+
+
+.login_main > .login_box > .sub_box > .signup > p{
+
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    top: 420px;
+    left: 38%;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #767676;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+/* .footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+
